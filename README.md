@@ -1,4 +1,4 @@
-Example files for [this webinar](http://www.oreilly.com/pub/e/3027)
+(this repo is a set of example files from [this webinar](http://www.oreilly.com/pub/e/3027))
 
 Cross-Platform Perfection: What To Do When Media Queries Aren't Enough
 ====
