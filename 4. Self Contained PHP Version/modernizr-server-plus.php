@@ -1,7 +1,9 @@
-<?php if (isset($_COOKIE['MODERNIZR'])) {
-    $MODERNIZR = $_COOKIE['MODERNIZR'];
-    return;
-} ?>
+<?php
+    if (isset($_COOKIE['MODERNIZR'])) {
+        $MODERNIZR = $_COOKIE['MODERNIZR'];
+        return;
+    }
+?>
 <!doctype html>
 <html>
     <head>
@@ -24,7 +26,6 @@
         <noscript>
             <p>Sorry! This site requires javascript :(</p>
         </noscript>
-        <p id="no-cookies" style="display:none">Sorry! This site requires cookies :(</p>
         <script>
             // Delete unused properties to minimize cookie size
             delete Modernizr._cssomPrefixes;
@@ -44,11 +45,11 @@
             Modernizr.extras = extras;
             $.cookie("MODERNIZR", JSON.stringify(Modernizr), {expires: 7});
             if (navigator.cookieEnabled) {
-              location.reload(true);
+                location.reload(true);
             } else {
-                $('#no-cookies').show();
+                document.write('<p>Sorry! This site requires cookies :(</p>');
             }
         </script>
     </body>
 </html>
-
+<?php die; // IMPORTANT: this line prevents execution from returning to the parent script in cases where cookies are disabled ?>
