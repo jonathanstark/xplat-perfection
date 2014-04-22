@@ -32,6 +32,7 @@ Traditional RWD techniques work great in many cases, but when you really need th
         * Requires cookies
         * Requires javascript
     * TODOS
-        * Make lang agnostic version (i.e., just HTML/CSS/JS)
-        * Create example that clears the cookie and stores data in session
-        * Make lang specific examples (e.g., PHP, Ruby, Python, etc)
+        * ~~Remove jQuery dependency~~
+        * ~~Make lang agnostic version (i.e., just HTML/CSS/JS)~~
+        * ~~Create example that clears the cookie and stores data in session~~
+        * Make lang specific examples (e.g., Ruby, Python, etc)
