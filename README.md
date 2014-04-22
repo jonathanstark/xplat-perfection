@@ -5,7 +5,7 @@ Cross-Platform Perfection: What To Do When Media Queries Aren't Enough
 
 Traditional RWD techniques work great in many cases, but when you really need that extra level of cross-platform polish, media queries et al will only get you so far. Follow along as Jonathan walks you through a range of tools and techniques that allow you to return highly-optimized, custom HTML, CSS, and JavaScript to users on any device.
 
-## Talk Outine
+## Talk Outline
 
 * Problem: You want to send highly optimized HTML/CSS/JS
     * Why? Two main reasons:
