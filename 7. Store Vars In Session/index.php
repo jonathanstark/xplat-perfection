@@ -3,18 +3,18 @@ ini_set('display_errors', TRUE);
 session_start();
 #
 # Have we already done our feature detection?
-if (empty($_SERVER['MODERNIZR'])) {
+if (empty($_SESSION['MODERNIZR'])) {
     if (empty($_COOKIE['MODERNIZR'])) {
         include 'modernizr-server-plus.html';
         die;
     } else {
-        $_SERVER['MODERNIZR'] = $_COOKIE['MODERNIZR'];
+        $_SESSION['MODERNIZR'] = $_COOKIE['MODERNIZR'];
         setcookie('MODERNIZR', 'cleared', time()-3600);
     }
 }
 #
 # Grab values and convert json string to php object
-$MODERNIZR = json_decode($_SERVER['MODERNIZR']);
+$MODERNIZR = json_decode($_SESSION['MODERNIZR']);
 #
 # Branch based on client-side data
 if ($MODERNIZR->svg) {
