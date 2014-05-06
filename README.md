@@ -1,4 +1,4 @@
-(this repo is a set of example files from [this webinar](http://www.oreilly.com/pub/e/3027))
+NOTE: This repo is a set of example files originally created for [this webinar](http://www.oreilly.com/pub/e/3027))
 
 Cross-Platform Perfection: What To Do When Media Queries Aren't Enough
 ====
@@ -35,4 +35,6 @@ Traditional RWD techniques work great in many cases, but when you really need th
         * ~~Remove jQuery dependency~~
         * ~~Make lang agnostic version (i.e., just HTML/CSS/JS)~~
         * ~~Create example that clears the cookie and stores data in session~~
+        * Check for googlebot requests
+        * Check for facebook share requests
         * Make lang specific examples (e.g., Ruby, Python, etc)
